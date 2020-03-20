@@ -1,2 +1,2 @@
-# taras_havryliak
-epam_course
+# online-part proj
+epam course
