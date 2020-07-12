@@ -1,12 +1,13 @@
 package com.havryliak.Model;
 
 public class Room {
+    private int id;
     private int number;
     private String room_type;
     private boolean available;
 
-
-    public Room(int number, String room_type, boolean available){
+    public Room(int id, int number, String room_type, boolean available){
+        this.id = id;
         this.number = number;
         this.room_type = room_type;
         this.available = available;
@@ -14,6 +15,14 @@ public class Room {
 
     public int getNumber() {
         return number;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNumber(int number) {
@@ -39,7 +48,8 @@ public class Room {
     @Override
     public String toString() {
         return "Room{" +
-                "number=" + number +
+                "id=" + id +
+                ", number=" + number +
                 ", room_type='" + room_type + '\'' +
                 ", available=" + available +
                 '}';

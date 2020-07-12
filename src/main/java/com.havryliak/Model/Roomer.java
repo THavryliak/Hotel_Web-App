@@ -4,24 +4,13 @@ public class Roomer {
     private String first_name;
     private String second_name;
     private int age;
-    private String country;
+    private String nationality;
 
-    private Room room;
-
-    public Roomer(String first_name, String second_name, int age, String country, Room room) {
+    public Roomer(String first_name, String second_name, int age, String nationality) {
         this.first_name = first_name;
         this.second_name = second_name;
         this.age = age;
-        this.country = country;
-        this.room = room;
-    }
-
-    public Room getRoom() {
-        return room;
-    }
-
-    public void setRoom(Room room) {
-        this.room = room;
+        this.nationality = nationality;
     }
 
     public String getFirst_name() {
@@ -49,21 +38,20 @@ public class Roomer {
     }
 
     public String getCountry() {
-        return country;
+        return nationality;
     }
 
     public void setCountry(String country) {
-        this.country = country;
+        this.nationality = country;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Roomer{" +
                 "first_name='" + first_name + '\'' +
                 ", second_name='" + second_name + '\'' +
                 ", age=" + age +
-                ", country='" + country + '\'' +
-                ", room=" + room +
+                ", nationality='" + nationality + '\'' +
                 '}';
     }
 }
