@@ -6,6 +6,12 @@ public class Room {
     private String room_type;
     private boolean available;
 
+    public Room(int number, String room_type, boolean available){
+        this.number = number;
+        this.room_type = room_type;
+        this.available = available;
+    }
+
     public Room(int id, int number, String room_type, boolean available){
         this.id = id;
         this.number = number;
