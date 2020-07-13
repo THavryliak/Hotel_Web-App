@@ -13,11 +13,10 @@ public class Room {
     }
 
     public Room(int id, int number, String room_type, boolean available){
+        this(number, room_type, available);
         this.id = id;
-        this.number = number;
-        this.room_type = room_type;
-        this.available = available;
     }
+
 
     public int getNumber() {
         return number;

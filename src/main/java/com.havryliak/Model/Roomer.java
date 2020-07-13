@@ -1,15 +1,43 @@
 package com.havryliak.Model;
 
 public class Roomer {
+    private int id;
     private String first_name;
     private String second_name;
     private int age;
     private String nationality;
+    private String living_period;
 
     public Roomer(String first_name, String second_name, int age, String nationality) {
         this.first_name = first_name;
         this.second_name = second_name;
         this.age = age;
+        this.nationality = nationality;
+    }
+
+    public Roomer(int id, String first_name, String second_name, int age, String nationality) {
+        this(first_name, second_name, age, nationality);
+        this.id = id;
+    }
+
+    public Roomer(int id, String first_name, String second_name, int age, String nationality, String living_period) {
+        this(id, first_name, second_name, age, nationality);
+        this.living_period = living_period;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
         this.nationality = nationality;
     }
 
@@ -37,18 +65,11 @@ public class Roomer {
         this.age = age;
     }
 
-    public String getCountry() {
-        return nationality;
-    }
-
-    public void setCountry(String country) {
-        this.nationality = country;
-    }
-
     @Override
     public String toString() {
         return "Roomer{" +
-                "first_name='" + first_name + '\'' +
+                "id=" + id +
+                ", first_name='" + first_name + '\'' +
                 ", second_name='" + second_name + '\'' +
                 ", age=" + age +
                 ", nationality='" + nationality + '\'' +
