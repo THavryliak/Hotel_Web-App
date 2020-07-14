@@ -15,7 +15,9 @@ public class Main {
         RoomerDAO rDao = new RoomerDAO();
         Room_Roomer_DAO rrDao = new Room_Roomer_DAO();
 
+        System.out.println(dao.getAll());
+        System.out.println(rDao.getAll());
         System.out.println(rrDao.getAll());
-        System.out.println(rrDao.findBy(1));
+
     }
 }

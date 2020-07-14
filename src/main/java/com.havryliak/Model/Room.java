@@ -18,8 +18,6 @@ public class Room {
         this.id = id;
     }
 
-
-
     public int getNumber() {
         return number;
     }
