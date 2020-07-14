@@ -6,7 +6,6 @@ public class Roomer {
     private String second_name;
     private int age;
     private String nationality;
-    private String living_period;
 
     public Roomer(String first_name, String second_name, int age, String nationality) {
         this.first_name = first_name;
@@ -18,11 +17,6 @@ public class Roomer {
     public Roomer(int id, String first_name, String second_name, int age, String nationality) {
         this(first_name, second_name, age, nationality);
         this.id = id;
-    }
-
-    public Roomer(int id, String first_name, String second_name, int age, String nationality, String living_period) {
-        this(id, first_name, second_name, age, nationality);
-        this.living_period = living_period;
     }
 
     public int getId() {

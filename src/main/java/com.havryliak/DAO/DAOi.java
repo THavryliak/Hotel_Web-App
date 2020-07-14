@@ -8,13 +8,15 @@ public interface DAOi<T> {
     //Returns a list of all objects stored in DB
 
     void add(T t);
-    //Adds new object  to DB
+    //Adds new object to DB
 
     void deleteBy(int param);
-    //Room - delete by room number
-    //Roomer - delete by id
+    //Room - deletes by room number
+    //Roomer - deletes by id
+    //Room_Roomer - deletes by id
 
     T findBy(int param);
-    //Room - find by number
-    //Roomer - find by id
+    //Room - finds by number
+    //Roomer - finds by id
+    //Room_Roomer - finds by id
 }

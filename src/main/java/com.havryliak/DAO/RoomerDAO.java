@@ -1,12 +1,12 @@
 package com.havryliak.DAO;
 
 import com.havryliak.DBconnector.dbConnector;
-import com.havryliak.Model.Room;
 import com.havryliak.Model.Roomer;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class RoomerDAO implements DAOi<Roomer> {
     dbConnector connector = new dbConnector();
@@ -84,8 +84,8 @@ public class RoomerDAO implements DAOi<Roomer> {
     }
 
 
-    //optional
-    public void update(Roomer roomer) {
+    //gets Room roomer from servlet
+    public void updateRoomer(Roomer roomer) {
         try (Connection connection = connector.getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_ROOMER)
         ) {
