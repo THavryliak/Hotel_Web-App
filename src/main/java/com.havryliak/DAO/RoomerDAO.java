@@ -83,7 +83,6 @@ public class RoomerDAO implements DAOi<Roomer> {
         return roomer;
     }
 
-
     //gets Room roomer from servlet
     public void updateRoomer(Roomer roomer) {
         try (Connection connection = connector.getConnection();

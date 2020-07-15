@@ -9,6 +9,7 @@ import java.util.List;
 
 public class RoomDAO implements DAOi<Room> {
 
+
     dbConnector connector = new dbConnector(); // цікаво, що без конструктора - не працює
 
     private static final String SELECT_ALL_ROOMS = "SELECT * FROM room;";
@@ -34,6 +35,7 @@ public class RoomDAO implements DAOi<Room> {
                 roomsList.add(room);
             }
         } catch (SQLException e) {
+
             e.printStackTrace();
         }
         return roomsList;

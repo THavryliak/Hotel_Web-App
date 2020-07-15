@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class dbConnector {
 
     private static final String DB_DRIVER = "org.h2.Driver";
-    private static final String jdbcURL = "jdbc:h2:D:\\EpamProject\\taras_havryliak\\db\\myhotel";
+    private static final String jdbcURL = "jdbc:h2:D:\\EpamProject\\taras_havryliak\\db\\new";
     private static final String jdbcUsername = "root";
     private static final String jdbcPassword = "root";
 
