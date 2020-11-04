@@ -1,2 +1,2 @@
-# online-part proj
+# Java Web App
 epam course
